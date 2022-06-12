@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">xxx审查考试(FxYubSoft)</string>
+    <string name="app_shortname">xxx审查考试</string>
+    <string name="app_longname">xxx资格认定考试学习平台</string>
+    <string name="app_devdate">202103</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">未登录</string>
+    <string name="nav_header_subtitle">xxx学习小组</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_reset">清空数据缓存</string>
+
+    <string name="menu_home">xxx认定工作试题库</string>
+    <string name="menu_settings">更多设置</string>
+    <string name="menu_about">关于我们</string>
+
+    <string name="tip_nocollect">您还没有收藏记录哦</string>
+    <string name="tip_noerror">您还没有错题哦，先去做题吧~</string>
+
+    <string-array name="entries_list_preference">
+        <item>小号</item>
+        <item>标准</item>
+        <item>中号</item>
+        <item>大号</item>
+        <item>偏大号</item>
+        <item>特大号</item>
+    </string-array>
+
+    <string-array name="entryvalues_list_preference">
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+    </string-array>
+
+    <string-array name="chapter_array">
+        <item>xxx基础知识</item>
+        <item>xxx资格认定办法</item>
+        <item>xxx资格标准</item>
+        <item>模拟考试</item>
+    </string-array>
+
+    <string-array name="question_array">
+        <item>单选题</item>
+        <item>多选题</item>
+        <item>判断题</item>
+        <item>填空题</item>
+        <item>简答题</item>
+    </string-array>
+
+    <string name="login">登录</string>
+    <string name="register">动态登录</string>
+    <string name="text_qq_login">QQ登录</string>
+    <string name="text_wx_login">微信登录</string>
+
+    <string name="please_check_info">(所有信息请认真核实，否则无法打款由行家自行负责)</string>
+    <string name="please_input_account_and_count">请输入提现账户和提现金额</string>
+    <string name="please_input_identifying_code">请输入验证码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="please_input_nickname">请输入昵称</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_question">请输入问题</string>
+    <string name="please_input_recommender">请输入推荐人(选填)</string>
+    <string name="please_input_register_phone">请填写您注册帐号的手机号码</string>
+    <string name="please_input_sms_identify_code">请输入短信验证码</string>
+    <string name="please_input_username">请输入用户名</string>
+
+    <string name="get_again">重新获取</string>
+    <string name="get_identifying_code">获取验证码</string>
+    <string name="config">确定</string>
+    <string name="confirm_bind">确定</string>
+    <string name="confirm_login">确认登录</string>
+    <string name="text_account_login">账号登录</string>
+    <string name="night">夜间</string>
+    <string name="is_clear_record">您确定要清空当前做题记录并重新开始吗？</string>
+    <string name="clear_record">清空记录</string>
+    <string name="jiakao_car_vip_name">VIP课程</string>
+
+    <string-array name="hint_array">
+        <item>xxx规定千万条，严格落实第一条。</item>
+        <item>干工作，一日无功即是过；干xxx，一世无过才是功。</item>
+        <item>xxx工作最大的隐患是没有忧患意识。</item>
+    </string-array>
+</resources>

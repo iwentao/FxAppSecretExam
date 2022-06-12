@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BaseUtilLib</string>
+    <string name="url_dingding">https://oapi.dingtalk.com/robot/send?access_token=f15486f53799e57217e731a18c8eead4abfb48bb5ab336e5195ff73a7541c69d</string>
+</resources>

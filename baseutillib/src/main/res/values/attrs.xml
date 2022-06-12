@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CircleProgressBar">
+    <attr name="line_count" format="integer|reference"/>
+    <attr name="line_width" format="dimension|reference"/>
+    <attr name="progress_start_color" format="color|reference"/>
+    <attr name="progress_end_color" format="color|reference"/>
+    <attr name="progress_text_color" format="color|reference"/>
+    <attr name="progress_text_size" format="dimension|reference"/>
+    <attr name="progress_stroke_width" format="dimension|reference"/>
+    <attr name="progress_background_color" format="color|reference"/>
+    <attr name="progress_start_degree" format="integer|reference"/>
+    <attr name="drawBackgroundOutsideProgress" format="boolean|reference"/>
+
+    <attr name="progress_blur_radius" format="dimension|reference"/>
+    <attr name="progress_blur_style">
+      <enum name="normal" value="0"/>
+      <enum name="solid" value="1"/>
+      <enum name="outer" value="2"/>
+      <enum name="inner" value="3"/>
+    </attr>
+
+    <attr name="progress_style">
+      <enum name="line" value="0"/>
+      <enum name="solid" value="1"/>
+      <enum name="solid_line" value="2"/>
+    </attr>
+
+    <attr name="progress_shader">
+      <enum name="linear" value="0"/>
+      <enum name="radial" value="1"/>
+      <enum name="sweep" value="2"/>
+    </attr>
+
+    <attr name="progress_stroke_cap">
+      <enum name="butt" value="0"/>
+      <enum name="round" value="1"/>
+      <enum name="square" value="2"/>
+    </attr>
+
+  </declare-styleable>
+
+  <declare-styleable name="PasswordInputView">
+    <attr name="pwv_maxLength" format="integer" />
+
+    <attr name="pwv_borderColor" format="color" />
+    <attr name="pwv_pwdColor" format="color" />
+    <attr name="pwv_haveInputBorderColor" format="color" />
+
+    <attr name="pwv_strokeWidth" format="dimension" />
+    <attr name="pwv_radius" format="dimension" />
+    <attr name="pwv_spacing" format="dimension" />
+    <attr name="pwv_asterisk" format="string" />
+
+    <attr name="pwv_borderStyle" format="enum">
+      <enum name="box" value="0" />
+      <enum name="line" value="1" />
+    </attr>
+    <attr name="pwv_pwdStyle" format="enum">
+      <enum name="circle" value="0" />
+      <enum name="asterisk" value="1" />
+      <enum name="plaintext" value="2" />
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="circletextview">
+    <attr name="circle_color" format="color"/>
+    <attr name="circle_text_color" format="color"/>
+    <attr name="random_color" format="boolean"/>
+    <attr name="index_color" format="integer"/>
+    <attr name="sub_first_character" format="boolean"/>
+    <attr name="text" format="string"/>
+  </declare-styleable>
+
+</resources>

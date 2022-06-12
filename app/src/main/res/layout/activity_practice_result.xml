@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/core__title_bar_height">
+
+            <ImageView
+                android:id="@+id/btn_finish"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1.0dip"
+                android:padding="10dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/core__title_bar_back_icon" />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="考试结果"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ffeeeeee" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8.0dip"
+                android:includeFontPadding="false"
+                android:text="78"
+                android:textColor="#ff333333"
+                android:textSize="36.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/result"
+                android:layout_marginBottom="4.0dip"
+                android:layout_toRightOf="@id/result"
+                android:text="分"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/sub_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginBottom="15.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:11"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="考试用时"
+                        android:textColor="#ff666666"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/result_type_ll"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/result_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不合格"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="考试结果"
+                        android:textColor="#ff666666"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/result_score_ll"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/result_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/jiakao_ic_common_arrow_right"
+                        android:drawablePadding="5.0dip"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/result_score_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="最佳成绩"
+                        android:textColor="#ff666666"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/result_rank_ll"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/result_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/jiakao_ic_common_arrow_right"
+                        android:drawablePadding="5.0dip"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="最佳排名"
+                        android:textColor="#ff666666"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/correct_type_ll"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/correct_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="正确率"
+                        android:textColor="#ff666666"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/icon_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bg_rl"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="-12.0dip"
+                android:layout_marginRight="7.0dip"
+                android:background="@drawable/jiakao_card_view_corner"
+                android:paddingLeft="25.0dip"
+                android:paddingTop="25.0dip"
+                android:paddingBottom="25.0dip">
+
+                <ImageView
+                    android:id="@+id/tab"
+                    android:layout_width="17.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:src="@drawable/jiakao_pic_cjjg_rq_jkyq" />
+
+                <TextView
+                    android:id="@+id/tab_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dip"
+                    android:layout_toRightOf="@id/tab"
+                    android:includeFontPadding="false"
+                    android:text="一马当先"
+                    android:textColor="#ff333333"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tab_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tab_title"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_toRightOf="@id/tab"
+                    android:text="不仅顺利通过，还是第一个交白卷的"
+                    android:textColor="#ff666666"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bg_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="263.0dip"
+                android:layout_below="@id/sub_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip">
+
+                <ImageView
+                    android:id="@+id/bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="263.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jiakao_pic_cjjg_rq_bj" />
+
+                <TextView
+                    android:id="@+id/start_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:text="开始考试的勇士"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:text="2020年10月7日"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/start_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/start_desc"
+                    android:layout_alignLeft="@id/start_desc"
+                    android:layout_marginBottom="15.0dip"
+                    android:includeFontPadding="false"
+                    android:text="No.153477106"
+                    android:textColor="@color/white"
+                    android:textSize="24.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/start_num"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_toRightOf="@id/start_num"
+                    android:text="位"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/start_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/start_num"
+                    android:layout_alignLeft="@id/start_num"
+                    android:layout_marginRight="3.0dip"
+                    android:layout_marginBottom="15.0dip"
+                    android:text="我"
+                    android:textColor="@color/white"
+                    android:textSize="28.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/start_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/start_me"
+                    android:layout_marginRight="3.0dip"
+                    android:layout_marginBottom="4.0dip"
+                    android:layout_toRightOf="@id/start_me"
+                    android:text="是2020年"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5.0dip"
+                android:layout_marginBottom="44.0dip">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="#ffeeeeee" />
+
+                <TextView
+                    android:id="@id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="42.0dip"
+                    android:paddingRight="42.0dip"
+                    android:text="分享给好友炫耀"
+                    android:textColor="#ff333333"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold" />
+
+                <include
+                    android:id="@+id/share_interest_mask"
+                    layout="@layout/question_explain_bottom_share_interest_mask"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="15.0dip" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

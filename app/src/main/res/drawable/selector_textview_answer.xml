@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/draw_login_before" android:state_selected="false"/>-->
+    <!--<item android:drawable="@drawable/draw_login_after" android:state_selected="true"/>-->
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="#FEFEFE"/>
+            <stroke android:color="#d0d0d0" android:width="0.5dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#F8F8F8"/>
+            <stroke android:color="#d0d0d0" android:width="0.5dp"/>
+            <gradient
+                android:startColor="#F0F0F0"
+                android:endColor="#F0F0FF"
+                android:angle="45"
+                />
+        </shape>
+    </item>
+</selector>

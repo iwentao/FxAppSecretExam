@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/answer_card_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="42.0dip"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#0d000000" />
+
+    <RelativeLayout
+        android:id="@+id/answer_card_close_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/practice_answer_card_super_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12.0dip"
+            android:button="@null"
+            android:drawableLeft="@drawable/jiakao_practice_favor_btn_bg"
+            android:drawablePadding="5.0dip"
+            android:gravity="center"
+            android:padding="0.0px"
+            android:text="收藏"
+            android:textColor="@color/jiakao_practice_favor_btn_color_day"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/practice_submit"
+            android:layout_width="56.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@id/practice_answer_card_super_btn"
+            android:background="@drawable/jiakao_practice_text_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="交卷"
+            android:textColor="#FFFFFF"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/error_favor"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@id/practice_answer_card_super_btn"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/jiakao_practice_favor_btn_bg"
+            android:drawablePadding="5.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/practice_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:layout_toRightOf="@id/practice_answer_card_super_btn"
+            android:drawableLeft="@drawable/jiakao_ic_stxj_yydtjq"
+            android:drawablePadding="8.0dip"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#ff020202"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/practice_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25.0dip"
+            android:layout_toRightOf="@id/error_favor"
+            android:paddingRight="10.0dip"
+            android:src="@drawable/jiakao_practice_sort_btn_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/practice_indicator_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="0/100"
+            android:textColor="@color/jiakao_practice_content_text_color_day"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/practice_indicator_image"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/practice_indicator_text"
+            android:src="@drawable/practice_indicator_image" />
+
+        <Space
+            android:id="@+id/fakeView"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="84.0dip" />
+
+        <ImageView
+            android:id="@+id/practice_error_count_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50.0dip"
+            android:layout_toLeftOf="@id/fakeView"
+            android:src="@drawable/practice_error_count_image" />
+
+        <TextView
+            android:id="@+id/practice_error_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-44.0dip"
+            android:layout_toRightOf="@id/practice_error_count_image"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:textColor="@color/practice_error_count_text_color_day"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/practice_right_count_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50.0dip"
+            android:layout_toLeftOf="@id/practice_error_count_image"
+            android:src="@drawable/practice_right_count_image" />
+
+        <TextView
+            android:id="@+id/practice_right_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-44.0dip"
+            android:layout_toRightOf="@id/practice_right_count_image"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:textColor="@color/practice_right_count_text_color_day"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_input_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="#fff4f7f7"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/comment_input_text_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_f7f9f9_corner_17dp" />
+
+        <ImageView
+            android:id="@+id/comment_input_text_left_image"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0dip"
+            android:src="@drawable/jiakao_ic_shuru" />
+
+        <TextView
+            android:id="@+id/comment_input_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.0dip"
+            android:layout_toRightOf="@id/comment_input_text_left_image"
+            android:gravity="center_vertical"
+            android:text="请输入评论..."
+            android:textColor="#ff999999"
+            android:textSize="14.0sp" />
+
+        <View
+            android:id="@+id/comment_input_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_alignParentTop="true"
+            android:background="#ffeeeeee" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#0d000000" />
+
+        <GridView
+            android:id="@+id/answer_sheet_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:clipToPadding="false"
+            android:columnWidth="60.0dip"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="6"
+            android:paddingBottom="10.0dip"
+            android:scrollbars="none"
+            android:soundEffectsEnabled="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10.0dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#0d000000" />
+
+        <include layout="@layout/answer_card_layout_clear" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

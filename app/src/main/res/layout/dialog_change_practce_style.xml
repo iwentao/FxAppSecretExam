@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shang="http://schemas.android.com/tools"
+    android:id="@+id/content_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_white_corner_10dp"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/auto_paging_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <TextView
+            android:id="@+id/paging_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15.0dip"
+            android:text="答对自动跳到下一题"
+            android:textSize="14.0sp" />
+
+        <CheckBox
+            android:id="@+id/auto_paging_btn"
+            android:layout_width="50.0dip"
+            android:layout_height="34.0dip"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="15.0dip"
+            android:button="@null"
+            android:drawableLeft="@drawable/auto_page_btn_d"
+            android:drawablePadding="5.0dip"
+            android:text=""
+            android:textColor="@color/jiakao_practice_favor_btn_color_day"
+            android:textSize="14.0sp" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@id/split_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/auto_paging_panel"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/right_text_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/split_line"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45.0dip"
+        android:layout_marginRight="25.0dip"
+        android:text="A"
+        android:textColor="#ff333333"
+        android:textSize="23.0dip" />
+
+    <TextView
+        android:id="@+id/left_text_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/right_text_anchor"
+        android:layout_alignBottom="@id/right_text_anchor"
+        android:layout_marginLeft="25.0dip"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ff333333"
+        android:textSize="17.0dip" />
+
+    <TextView
+        android:id="@+id/tv_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/left_text_anchor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6.0dip"
+        android:text="A标准"
+        android:textColor="#ff333333"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/default_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/left_text_anchor"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_toRightOf="@id/left_text_anchor"
+        android:gravity="center"
+        android:text="小号"
+        android:textSize="10.0sp" />
+
+    <TextView
+        android:id="@+id/big_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/left_text_anchor"
+        android:layout_marginRight="18.0dip"
+        android:layout_marginBottom="6.0dip"
+        android:layout_toLeftOf="@id/right_text_anchor"
+        android:gravity="center"
+        android:text="特大"
+        android:textSize="10.0sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/right_text_anchor"
+        android:layout_alignBottom="@id/right_text_anchor"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_toLeftOf="@id/right_text_anchor"
+        android:layout_toRightOf="@id/left_text_anchor"
+        android:gravity="center_vertical">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right_text_anchor"
+        android:layout_marginTop="12.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/style_huyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/jiakao_prctise_btn_eye_day_n"
+            android:drawablePadding="11.0dip"
+            android:gravity="center"
+            android:paddingTop="15.0dip"
+            android:paddingBottom="15.0dip"
+            android:text="护眼模式"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/style_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/jiakao_prctise_btn_moon_day_n"
+            android:drawablePadding="11.0dip"
+            android:gravity="center"
+            android:paddingTop="15.0dip"
+            android:paddingBottom="15.0dip"
+            android:text="夜间模式"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/style_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/jiakao_prctise_btn_sun_day_s"
+            android:drawablePadding="11.0dip"
+            android:gravity="center"
+            android:paddingTop="15.0dip"
+            android:paddingBottom="15.0dip"
+            android:text="日间模式"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</RelativeLayout>

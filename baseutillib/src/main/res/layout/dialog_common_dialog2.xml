@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/common_len_20px"
+        android:text="您确定要删除此话题？"
+        android:textColor="@color/text_color_4A4A4A"
+        android:textSize="@dimen/common_text_size_15px" />
+
+    <include layout="@layout/separate_line_layout" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_len_52px"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/text_color_4A4A4A"
+        android:textSize="@dimen/common_text_size_18px" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_len_5px"
+        android:background="@color/baseBg" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_len_52px"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_color_4A4A4A"
+        android:textSize="@dimen/common_text_size_18px" />
+</LinearLayout>

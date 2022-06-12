@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12.0dip"
+    android:layout_marginRight="12.0dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/first_button_mask"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/first_image"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:src="@drawable/jiakao_share_interest_pyq" />
+
+        <TextView
+            android:id="@+id/first_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="朋友圈"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_button_mask"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/second_image"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jiakao_share_interest_wx" />
+
+        <TextView
+            android:id="@+id/second_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="微信好友"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_button_mask"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/third_image"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jiakao_share_interest_qq" />
+
+        <TextView
+            android:id="@+id/third_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="QQ好友"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourth_button_mask"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/fourth_image"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jiakao_share_interest_qqkj" />
+
+        <TextView
+            android:id="@+id/fourth_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="QQ空间"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fifth_button_mask"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/fifth_image"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/jiakao_share_interest_sina" />
+
+        <TextView
+            android:id="@+id/fifth_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fifth_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="微博"
+            android:textColor="#ff333333"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+</LinearLayout>

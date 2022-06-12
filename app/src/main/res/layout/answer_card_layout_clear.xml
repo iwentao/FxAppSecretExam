@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clear_root"
+    android:layout_width="fill_parent"
+    android:layout_height="36.0dip"
+    android:background="#fff4f7f7"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:text="清除记录，重新开始练习"
+        android:textColor="#ff666666"
+        android:textSize="14.0sp" />
+
+    <Space
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/clear_tv"
+        android:layout_width="140.0dip"
+        android:layout_height="26.0dip"
+        android:layout_marginRight="15.0dip"
+        android:gravity="center"
+        android:text="清除当前做题记录"
+        android:clickable="true"
+        android:textColor="#ff1dacf9"
+        android:textSize="14.0sp"
+        app:bl_corners_radius="13.0dip"
+        app:bl_stroke_color="#ff1dacf9"
+        app:bl_stroke_width="1.0dip" />
+
+</LinearLayout>

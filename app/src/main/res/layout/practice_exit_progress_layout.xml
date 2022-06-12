@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_corner_100dp"
+    android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="6.0dip"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginTop="22.0dip"
+        android:layout_marginRight="28.0dip"
+        android:background="@drawable/bg_divider_corner_100dp" />
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_width="8.0dip"
+        android:layout_height="6.0dip"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginTop="22.0dip"
+        android:layout_marginRight="28.0dip"
+        android:src="@drawable/bg_gradient_exit_practice_progress" />
+
+    <RelativeLayout
+        android:layout_width="38.0dip"
+        android:layout_height="21.0dip"
+        android:layout_marginLeft="-54.0dip"
+        android:layout_toRightOf="@id/progress"
+        android:background="@drawable/jk_ic_dtfh_jindu"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2.0dip"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/white"
+            android:textSize="11.0dip"
+            android:text="2%"/>
+    </RelativeLayout>
+</RelativeLayout>

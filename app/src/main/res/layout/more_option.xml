@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff2f7fa"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/recommend_auto_clear_cache_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_subject_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:text="清除缓存"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jiakao_ic_common_arrow_right" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/option_feed_back"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_subject_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:text="意见反馈"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jiakao_ic_common_arrow_right" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/option_download_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_subject_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:text="下载设置"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/option_current_video_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:text="手机"
+                android:textColor="#ff999999"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jiakao_ic_common_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <RelativeLayout
+            android:id="@+id/option_check_update"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_subject_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:text="检查更新"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:text="当前版本 v1.0.0"
+                android:textColor="#ff999999"
+                android:textSize="14.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jiakao_ic_common_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/option_control_sound"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/bg_subject_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="12.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14.0dip"
+                android:text="声音开关"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/tv_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:text="开"
+                android:textColor="#ff999999"
+                android:textSize="14.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jiakao_ic_common_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <TextView
+            android:id="@+id/option_about"
+            style="@style/setting_item"
+            android:text="关于"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="20.0dip"
+            android:background="#ffdedfe0" />
+
+        <TextView
+            android:id="@+id/option_view_in_market"
+            style="@style/setting_item"
+            android:layout_marginTop="12.0dip"
+            android:text="亲，给个好评吧"/>
+
+        <ImageView
+            android:id="@+id/iv_reward"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/thanks" />
+
+    </LinearLayout>
+</ScrollView>

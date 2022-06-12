@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/top_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/et_username"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/login_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90.0dip"
+        android:background="@drawable/corner_bg_gray_border"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名或者手机号"
+        android:imeOptions="actionNext"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_userpassword"
+        style="@style/AutoCompleteStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/login_title"
+        android:layout_below="@id/et_username"
+        android:layout_alignLeft="@id/et_username"
+        android:layout_marginTop="22.0dip"
+        android:background="@drawable/corner_bg_gray_border"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_userpassword"
+        android:layout_alignRight="@id/et_userpassword"
+        android:layout_marginTop="14.0dip"
+        android:text="忘记密码?"
+        android:textColor="@color/blue_index" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/login_title"
+        android:layout_below="@id/forget_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14.0dip"
+        android:background="@drawable/corners_bg"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/qq_login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/text_qq_login"
+                android:textColor="@color/other_login_text_color"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wx_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/wx_login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/text_wx_login"
+                android:textColor="@color/other_login_text_color"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_layout"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="使用其他方式登录"
+            android:textColor="@color/other_login_text_color"
+            android:textSize="12.0sp" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@color/gray" />
+    </LinearLayout>
+</RelativeLayout>

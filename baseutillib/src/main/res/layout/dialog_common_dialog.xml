@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background_white_round"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="15.0dip"
+        android:textColor="#ff212121"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        android:text="温馨提示"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginBottom="7.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.0dip"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="15.0dip"
+        android:text="欢迎回来~继续做题吧~\n共100题，还剩95题"
+        android:textColor="#ff212121"
+        android:textSize="16.0sp" />
+
+    <View style="@style/DividerLine" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_btn_left"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ff757575"
+            android:textSize="16.0sp" />
+
+        <View
+            android:id="@+id/dialog_btn_split"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.0"
+            android:background="@color/default_divider_color" />
+
+        <TextView
+            android:id="@+id/dialog_btn_right"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/common_blue"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</LinearLayout>

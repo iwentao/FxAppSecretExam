@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#C0C0C0" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/head_view_student"/>
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="center_horizontal"
+            android:text="11" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="用户" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="2dp"
+            android:text="积分" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_horizontal"
+            android:text="最近" />
+
+    </LinearLayout>
+</LinearLayout>

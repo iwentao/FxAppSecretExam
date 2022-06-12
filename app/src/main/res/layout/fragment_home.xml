@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/saturn__owner_ask_tag_detail_bg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="1dp"
+            android:singleLine="true"
+            android:text="保密规定千万条，严格落实第一条。"
+            android:textColor="@color/text_color_B3B3B3"
+            android:background="#F0F0F0"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_wdct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_yct"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="我的错题"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_tbjq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_tbjq"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="我的收藏"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_lkjl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_lkjl"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="练考记录"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_news"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_dgcz"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="地方信息"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <com.fxyublib.android.baseutillib.View.CircleProgressBar
+                    android:id="@+id/pb_done"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30.0dip"
+                    app:progress_end_color="#00A0FF"
+                    app:progress_start_color="#80A0FF"
+                    app:progress_text_color="#FFFFFF"
+                    app:progress_text_size="@dimen/circlemenu_font_size" />
+
+                <com.fxyublib.android.baseutillib.View.CircleProgressBar
+                    android:id="@+id/pb_average_score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30.0dip"
+                    app:progress_end_color="#00A000"
+                    app:progress_start_color="#80A080"
+                    app:progress_text_color="#FFFFFF"
+                    app:progress_text_size="@dimen/circlemenu_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sjlx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_sjlx"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="随机练习"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_zxlx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_zxlx"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="专项练习"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_zjlx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_zjlx"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="章节练习"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+                <TextView
+                    android:id="@+id/tv_tkcx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95.0dip"
+                    android:drawableTop="@drawable/cell_icon_jjtk"
+                    android:drawablePadding="@dimen/common_len_2px"
+                    android:gravity="center"
+                    android:paddingTop="10.0dip"
+                    android:text="题库查询"
+                    android:textColor="@color/text_color_4A4A4A"
+                    android:textSize="@dimen/mainmenu_font_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/separate_block_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="14.0dip">
+
+            <TextView
+                android:id="@+id/tv_pdf"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/cell_icon_wzt"
+                android:drawablePadding="@dimen/common_len_4px"
+                android:gravity="center"
+                android:text="资料库"
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/cell_icon_wdct"
+                android:drawablePadding="@dimen/common_len_4px"
+                android:gravity="center"
+                android:text="积分榜"
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/tv_zyt"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/cell_icon_zyt"
+                android:drawablePadding="@dimen/common_len_4px"
+                android:gravity="center"
+                android:text="留言板"
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/tv_sst"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/cell_icon_sst"
+                android:drawablePadding="@dimen/common_len_4px"
+                android:gravity="center"
+                android:text="..."
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/tv_sdt"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/cell_icon_sdt"
+                android:drawablePadding="@dimen/common_len_4px"
+                android:gravity="center"
+                android:text="速度题"
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <include layout="@layout/separate_block_layout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="@dimen/common_len_20px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="助攻神器"
+                android:textColor="@color/text_color_4A4A4A"
+                android:textSize="14.0dip" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="14.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="9.5dip"
+                android:background="@color/text_color_999999" />
+
+            <TextView
+                android:id="@+id/tv_video_mtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="神器在手事半功倍"
+                android:textColor="@color/text_color_999999"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

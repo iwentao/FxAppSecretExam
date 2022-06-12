@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c62828</color>
+    <color name="colorPrimaryDark">#8e0000</color>
+    <color name="colorAccent">#ff5f52</color>
+
+    <color name="tab_text_color">#808080</color>
+    <color name="tab_text_sel_color">#000000</color>
+    <color name="tab_indicator_color">#FF4081</color>
+
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+
+    <color name="dark_blue">#ff329af0</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="picture_color_black_80">#80000000</color>
+    <color name="picture_color_black_20">#20000000</color>
+
+    <color name="expert_list_divider">#ffe5e5e5</color>
+    <color name="status_bar_color">#ff007aff</color>
+    <color name="blue_index">#ff007aff</color>
+    <color name="school_list_bg_gray">#fff0f1f4</color>
+    <color name="other_login_text_color">#ff848484</color>
+    <color name="text_black">#ff444444</color>
+
+    <color name="base_gb">#fff5f5f5</color>
+    <color name="baseBg">#fff7f7f7</color>
+    <color name="setting_text_color_1a1a1a">#ff1a1a1a</color>
+    <color name="grey_D9D9D9">#ffd9d9d9</color>
+    <color name="baseLine">#ffeeeeee</color>
+    <color name="exercise_line_c2">#ffd9d9d9</color>
+    <color name="exercise_line_cl">#ffeeeeee</color>
+    <color name="line_cl">#ffc9c9c9</color>
+    <color name="progress_right_cl">#ff00d900</color>
+    <color name="progress_wrong_cl">#ffe36362</color>
+    <color name="transparent">#00000000</color>
+    <color name="jiakao_practice_favor_btn_color_day">#ff333333</color>
+    <color name="jiakao_practice_favor_btn_color_night">#ff6a7580</color>
+    <color name="jiakao_practice_content_text_color_day">#ff333333</color>
+    <color name="practice_error_count_text_color_day">#fff25e5e</color>
+    <color name="practice_error_count_text_color_night">#ff8c484c</color>
+    <color name="practice_right_count_text_color_day">#ff18b4ed</color>
+    <color name="practice_right_count_text_color_night">#ff22729c</color>
+    <color name="default_divider_color">#fff0f0f1</color>
+    <color name="common_blue">#ff1dacf9</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff375bf1</color>
+    <color name="bg_subject_item_default">#ffffffff</color>
+    <color name="bg_subject_item_pressed">#fff5f5f5</color>
+
+</resources>

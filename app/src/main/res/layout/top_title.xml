@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_title"
+        android:background="@color/status_bar_color">
+
+        <ImageView
+            android:id="@+id/textBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:padding="15.0dip"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:id="@+id/tv_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_login_title"
+            android:layout_alignBottom="@id/tv_login_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18.0dip"
+            android:background="@drawable/corner_bg_school_classify_select"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingBottom="5.0dip"
+            android:text="@string/register"
+            android:textColor="@color/blue_index"
+            android:textSize="@dimen/text_size_big"
+            android:visibility="gone"  />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:src="@mipmap/xx_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

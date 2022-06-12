@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="常规">
+
+        <CheckBoxPreference
+            android:key="pref_autonext"
+            android:title="答对自动跳到下一题"/>
+
+        <Preference
+            android:key="pref_resetdata"
+            android:title="清空所有做题记录"
+            android:summary="点一下进行清空操作"/>
+
+        <ListPreference
+            android:key="pref_fontsize"
+            android:dialogTitle="字体大小"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:summary="修改答题页面的字体大小"
+            android:title="字体大小"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

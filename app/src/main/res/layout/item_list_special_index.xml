@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circletextview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_special"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:background="@drawable/btn_white_press"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="32.0dip"
+        android:layout_height="64.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip">
+
+        <com.fxyublib.android.baseutillib.TextView.CircleTextView.CircleTextImage
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            circletextview:random_color="true"
+            circletextview:text="B"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/rl_icon"
+        android:text="单选题"
+        android:textColor="@color/text_color_4A4A4A"
+        android:textSize="@dimen/menu_font_size" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16.0dip"
+        android:text="100"
+        android:textColor="@color/text_color_999999"
+        android:textSize="@dimen/submenu_font_size"/>
+
+    <View
+        android:id="@+id/line_v"
+        android:layout_width="@dimen/dp1"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:background="@color/baseLine" />
+
+    <View
+        android:id="@+id/line_h"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/separate_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/baseLine" />
+</RelativeLayout>

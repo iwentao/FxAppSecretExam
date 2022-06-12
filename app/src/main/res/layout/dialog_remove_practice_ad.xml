@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40.0dip"
+        android:background="@drawable/bg_white_corner_10dp"
+        android:paddingBottom="25.0dip">
+
+        <TextView
+            android:id="@id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25.0dip"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:text="去除广告"
+            android:textColor="#ff333333"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@id/descTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="2"
+            android:text="做题免广告，沉浸练习效率更高"
+            android:textColor="#ff333333"
+            android:textSize="14.0sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:padding="5.0dip"
+            android:src="@drawable/dialog_ic_close"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/browseAd"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="21.0dip"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/dialog_confirm_btn_bg"
+            android:gravity="center"
+            android:text="看视频免当天广告"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descTv" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="21.0dip"
+            android:background="@drawable/jiakao_bg_30s"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:paddingTop="2.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="2.0dip"
+            android:text="推荐，只需30秒"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descTv" />
+
+        <TextView
+            android:id="@+id/vip"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/bg_shape_s1_333333_r100"
+            android:gravity="center"
+            android:text="开通VIP免广告"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/browseAd"
+            app:layout_goneMarginTop="21.0dip" />
+
+        <ProgressBar
+            android:id="@+id/loadingView"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="40.0dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descTv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

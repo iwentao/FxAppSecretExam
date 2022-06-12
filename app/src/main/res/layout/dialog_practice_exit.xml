@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15.0dip"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250.0dip"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/jiakao_bg_datifanhui" />
+
+    <RelativeLayout
+        android:id="@+id/title_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/top_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1.0dip"
+            android:padding="10dip"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:src="@drawable/jiakao__ic_back_white"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/practice_info_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_mask"
+        android:layout_marginLeft="7.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="7.0dip"
+        android:background="@drawable/jiakao_card_view_corner"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.0dip">
+
+            <TextView
+                android:id="@+id/right_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="#ff333333"
+                android:textSize="52.0sp"
+                android:textStyle="bold"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/right_rate_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/right_rate"
+                android:layout_toRightOf="@id/right_rate"
+                android:includeFontPadding="false"
+                android:paddingBottom="4.0dip"
+                android:text="%"
+                android:textColor="#ff333333"
+                android:textSize="30.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3.0dip"
+            android:text="本次正确率"
+            android:textColor="#ff333333"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginRight="7.0dip"
+            android:layout_marginBottom="22.0dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/done_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ff333333"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold"
+                    android:text="00:01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4.0dip"
+                    android:text="练习时间"
+                    android:textColor="#ff666666"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/error_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4.0dip"
+                    android:text="我的错题"
+                    android:textColor="#ff666666"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/done_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4.0dip"
+                    android:text="本次答题数"
+                    android:textColor="#ff666666"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/error_question_btn"
+                android:layout_width="123.0dip"
+                android:layout_height="34.0dip"
+                android:background="@drawable/bg_white_frame_black_corner_100dp"
+                android:gravity="center"
+                android:text="查看错题"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/vip_btn"
+                android:layout_width="123.0dip"
+                android:layout_height="34.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:background="@drawable/bg_blue_border_white_corner_100"
+                android:gravity="center"
+                android:text="@string/jiakao_car_vip_name"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/practice_info_mask"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="15.0dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/share_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/share_title"
+                    android:text="荣获称号: "
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/share_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刷题小先锋"
+                    android:textColor="#ff333333"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2.0dip"
+                android:text="刷题小先锋"
+                android:textColor="#ff666666"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/share_icon"
+            android:layout_width="46.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/bg_gradient_blue_corner_22dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/result_ad_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_view"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginRight="15.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ad_right_icon"
+            android:layout_width="6.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jiakao_ic_common_arrow_right"
+            android:tint="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/practice_count_mask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_ad_mask"
+        android:layout_marginTop="25.0dip"
+        android:layout_marginBottom="13.0dip">
+
+        <TextView
+            android:id="@+id/tv_answer_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:text="累计答题"
+            android:textColor="#ff333333"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/done_all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/tv_answer_question"
+            android:textColor="#ff333333"
+            android:textSize="13.0sp"
+            android:text="31题"/>
+
+        <TextView
+            android:id="@+id/undone_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:textColor="#ff999999"
+            android:textSize="13.0sp"
+            android:text="未做1597题"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pratice_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/practice_count_mask">
+
+        <include
+            android:id="@+id/progress_mask"
+            layout="@layout/practice_exit_progress_layout" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/practice_vip_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pratice_progress"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="9.0dip"
+        android:layout_marginRight="15.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70.0dip"
+            android:layout_marginTop="11.849976dip"
+            android:background="@drawable/bg_shape_e8e8e8_r4"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <ImageView
+                android:id="@+id/practice_vip_guide_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/jiakao_ic_vip_jingjiantiku" />
+
+            <TextView
+                android:id="@+id/practice_vip_guide_btn"
+                android:layout_width="86.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_gradient_blue_corner_100dp"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp"
+                android:text="我要速成"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_toLeftOf="@id/practice_vip_guide_btn"
+                android:layout_toRightOf="@id/practice_vip_guide_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/practice_vip_guide_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff333333"
+                    android:textSize="17.0sp"
+                    android:textStyle="bold"
+                    android:text="必做500题"/>
+
+                <TextView
+                    android:id="@+id/practice_vip_guide_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:textColor="#ff6e6e6e"
+                    android:textSize="13.0sp"
+                    android:text="破解高频考点，节省90%时间"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
